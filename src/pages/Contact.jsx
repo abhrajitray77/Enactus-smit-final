@@ -1,14 +1,7 @@
-import React from 'react'
-import Footer from '../components/Footer'
+import React from "react";
 
 const Contact = () => {
-  return (
-    <div className='relative h-screen'>Contact
-    <div>
-    <Footer />
-    </div>
-    </div>
-  )
-}
+  return <div>Contact</div>;
+};
 
-export default Contact
+export default Contact;
