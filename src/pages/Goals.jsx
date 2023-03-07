@@ -118,13 +118,13 @@ const sdgs = [
 
 const Goals = () => {
   return (
-    <>
+    <div className="h-screen">
       <div>
         <h1 className="flex justify-center whitespace-nowrap text-[3rem] md:text-[3.5rem] lg:text-[4.2rem] font-semibold">
           Our Goals
         </h1>
       </div>
-      <div className="bg-[#ffffffd5] rounded-3xl shadow-lg w-[800px] mx-auto px-6 ">
+      <div className=" bg-[#ffffffd5] rounded-3xl shadow-lg w-[70%] mx-auto px-6 ">
         <article className="text-justify md:text-[1.2rem] lg:text-[1.5rem] text-gray-900 font-medium indent-20 mt-8 leading-relaxed py-4">
           We at Enactus SMIT strive to develop an environment of
           entrepreneurship and innovation for the students of today, to help
@@ -137,7 +137,7 @@ const Goals = () => {
           relationship for our future endeavors.
         </article>
       </div>
-      <div className=" relative flex px-4  flex-wrap  mx-auto items-center flex-row justify-center  ">
+      <div className=" relative flex px-4  flex-wrap  mx-auto items-center flex-row justify-center">
         {sdgs.map((goal, img, index) => (
           <GoalsCard
             key={index}
@@ -151,7 +151,7 @@ const Goals = () => {
       <div className="mx-8 md:mx-20">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

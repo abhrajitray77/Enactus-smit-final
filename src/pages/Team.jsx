@@ -11,6 +11,7 @@ import Yash from "../imgs/Yash.png";
 import Ahana from "../imgs/Ahana.png";
 import Aditya from "../imgs/Aditya.png";
 import Sir from "../imgs/Bikash_sir.png";
+import Footer from "../components/Footer";
 
 const Team = () => {
   const presidentsTeachers = [
@@ -49,22 +50,56 @@ const Team = () => {
 
   const teamNames = [
     {
-      name: "Team",
-      members: ["Member", "Member", "Member"],
+      name: "Engagement",
+      director: "Gunjan Chakrabartty",
+      members: [
+        "Abhinav Anand",
+        "Abhrajit ray",
+        "Asmita Mukherjee",
+        "Nishita Dutta",
+      ],
     },
     {
-      name: "Team",
-      members: ["Member", "Member", "Member"],
+      name: "Event Management",
+      director: "Rythem Goyal",
+      members: [
+        "Anauksa Das",
+        "Arpan Ari",
+        "Devratna",
+        "Indraneel",
+        "Jatin Karki",
+        "Koustabh Das",
+        "Neelvie Chhetri",
+        "Nikita Kar",
+        "Rheah Pundi",
+      ],
     },
     {
-      name: "Team",
-      members: ["Member", "Member", "Member"],
+      name: "Media & Communications",
+      director: "Jatin Sharma",
+      members: [
+        "Gourav",
+        "Keshav Gupta",
+        "Manasvi Gupta",
+        "Nirzor Choudhary",
+        "Yeting Heruka",
+      ],
+    },
+    {
+      name: "Outreach",
+      director: "Achintya Sharma",
+      members: ["Adrija Chakrabarti", "Kusangla Lepcha", "Torsha Guha"],
+    },
+    {
+      name: "Survey",
+      director: "Suryasnato Mitra",
+      members: ["Ayusmaan Panigrahi ", "Gamin Ghaley", "Soheli Das"],
     },
   ];
   return (
-    <div>
+    <div className="h-screen">
       <h1 className="flex justify-center whitespace-nowrap text-[3rem] md:text-[3.5rem] lg:text-[4.2rem] font-semibold">
-        Teams
+        Our Team
       </h1>
 
       <div className="flex flex-col">
@@ -83,9 +118,16 @@ const Team = () => {
         </div>
         <div className="flex flex-wrap justify-center">
           {teamNames.map((teamName) => (
-            <TeamNameCard name={teamName.name} members={teamName.members} />
+            <TeamNameCard
+              name={teamName.name}
+              members={teamName.members}
+              director={teamName.director}
+            />
           ))}
         </div>
+      </div>
+      <div className="mx-8 md:mx-20">
+        <Footer />
       </div>
     </div>
   );
